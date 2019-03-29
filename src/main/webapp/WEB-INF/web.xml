@@ -1,0 +1,91 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<servlet>
+		<servlet-name>UserController</servlet-name>
+		<servlet-class>com.controller.UserController</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.controller.LoginController</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>AdminController</servlet-name>
+		<servlet-class>com.controller.AdminController</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	<!-- <servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/adminLogin</url-pattern>
+	</servlet-mapping> -->
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/success</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/failure</url-pattern>
+	</servlet-mapping>
+	<!-- <servlet-mapping>
+		<servlet-name>UserController</servlet-name>
+		<url-pattern>/loginSuccess</url-pattern>
+	</servlet-mapping>
+ -->
+
+	
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/loginUser</url-pattern>
+	</servlet-mapping>
+
+<!-- 	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/loginUser</url-pattern>
+	</servlet-mapping> -->
+	
+
+
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/loginSuccess</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/addMoney</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/transferMoney</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/checkBalance</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/logOut</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet-mapping>
+		<servlet-name>AdminController</servlet-name>
+		<url-pattern>/adminLogin</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
